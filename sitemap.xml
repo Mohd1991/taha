@@ -1,16 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+		<!--	created with www.mysitemapgenerator.com	-->
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-  <loc>https://webtool.today/</loc>
-  <lastmod>2025-08-06T06:38:49+00:00</lastmod>
+	<loc>https://webtool.today/</loc>
+	<lastmod>2025-08-06T09:43:53+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
-
-
+<url>
+	<loc>https://webtool.today/PDF-to-Excel-Converter.html</loc>
+	<lastmod>2025-08-06T09:43:53+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://webtool.today/excel-pdf.html</loc>
+	<lastmod>2025-08-06T09:43:53+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://webtool.today/Add-Multiple-JPG-to-PDF.html</loc>
+	<lastmod>2025-08-06T09:43:53+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://webtool.today/compare-pdf.html</loc>
+	<lastmod>2025-08-06T09:43:53+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://webtool.today/PDF%20Organizer.html</loc>
+	<lastmod>2025-08-06T09:43:53+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://webtool.today/PDF-compressor.html</loc>
+	<lastmod>2025-08-06T09:43:53+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://webtool.today/File-Converter.html</loc>
+	<lastmod>2025-08-06T09:43:53+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://webtool.today/eSignPDF.html</loc>
+	<lastmod>2025-08-06T09:43:53+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://webtool.today/Add-Water-Mark-to-PDF.html</loc>
+	<lastmod>2025-08-06T09:43:53+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://webtool.today/Word%20to%20PDF.html</loc>
+	<lastmod>2025-08-06T09:43:53+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://webtool.today/Word%20to%20JPG.html</loc>
+	<lastmod>2025-08-06T09:43:53+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://webtool.today/Image-Compressor.html</loc>
+	<lastmod>2025-08-06T09:43:53+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://webtool.today/Smart%20Image%20Compressor.html</loc>
+	<lastmod>2025-08-06T09:43:53+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://webtool.today/Image%20Enhancer%20-%20Enhance%20Your%20Photos%20Instantly.html</loc>
+	<lastmod>2025-08-06T09:43:53+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://webtool.today/Image-Converter.html</loc>
+	<lastmod>2025-08-06T09:43:53+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://webtool.today/Terms-of-Services.html</loc>
+	<lastmod>2025-08-06T09:43:53+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://webtool.today/Word%20to%20JPG.html</loc>
+	<lastmod>2025-08-06T09:43:57+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://webtool.today/Image%20Enhancer%20-%20Enhance%20Your%20Photos%20Instantly.html</loc>
+	<lastmod>2025-08-06T09:43:58+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
 </urlset>
