@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Get in Touch</title>
+    <title>Contact Us | Your Website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -15,88 +15,86 @@
         
         body {
             background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: #333;
+            line-height: 1.6;
             min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 20px;
-            color: #333;
         }
         
         .container {
-            display: flex;
             max-width: 1000px;
             width: 100%;
+            display: flex;
             background: white;
-            border-radius: 20px;
+            border-radius: 15px;
             overflow: hidden;
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
         }
         
         .contact-info {
-            flex: 1;
-            background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+            background: linear-gradient(135deg, #4776E6 0%, #8E54E9 100%);
             color: white;
-            padding: 40px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            padding: 50px 40px;
+            flex: 1;
         }
         
         .contact-form {
-            flex: 1;
-            padding: 40px;
+            padding: 50px 40px;
+            flex: 1.5;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .contact-info h1:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 70px;
+            height: 3px;
             background: white;
         }
         
-        .contact-info h2 {
-            font-size: 28px;
-            margin-bottom: 20px;
-            position: relative;
-        }
-        
-        .contact-info h2::after {
+        .contact-form h1:after {
             content: '';
             position: absolute;
-            bottom: -10px;
+            bottom: 0;
             left: 0;
-            width: 60px;
-            height: 4px;
-            background: #ffcc00;
-            border-radius: 2px;
+            width: 70px;
+            height: 3px;
+            background: #4776E6;
         }
         
         .contact-info p {
-            line-height: 1.6;
-            margin-bottom: 30px;
-            opacity: 0.9;
+            margin: 20px 0 30px;
+            font-size: 1.1rem;
+            line-height: 1.8;
         }
         
         .info-item {
             display: flex;
-            align-items: flex-start;
+            align-items: center;
             margin-bottom: 25px;
         }
         
-        .icon {
-            background: rgba(255, 255, 255, 0.2);
+        .info-item i {
+            font-size: 1.5rem;
             width: 50px;
             height: 50px;
+            background: rgba(255, 255, 255, 0.2);
             border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
             margin-right: 15px;
-            flex-shrink: 0;
-        }
-        
-        .icon i {
-            font-size: 20px;
-        }
-        
-        .info-text h3 {
-            font-size: 18px;
-            margin-bottom: 5px;
         }
         
         .social-icons {
@@ -110,98 +108,80 @@
             align-items: center;
             width: 40px;
             height: 40px;
-            border-radius: 50%;
             background: rgba(255, 255, 255, 0.2);
-            color: white;
+            border-radius: 50%;
             margin-right: 15px;
+            color: white;
+            text-decoration: none;
             transition: all 0.3s ease;
         }
         
         .social-icons a:hover {
-            background: #ffcc00;
-            transform: translateY(-3px);
-        }
-        
-        .contact-form h2 {
-            font-size: 28px;
-            margin-bottom: 30px;
-            color: #2575fc;
-            position: relative;
-        }
-        
-        .contact-form h2::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 0;
-            width: 60px;
-            height: 4px;
-            background: #ffcc00;
-            border-radius: 2px;
+            background: white;
+            color: #4776E6;
+            transform: translateY(-5px);
         }
         
         .form-group {
             margin-bottom: 25px;
         }
         
-        .form-group label {
+        label {
             display: block;
             margin-bottom: 8px;
-            font-weight: 500;
+            font-weight: 600;
             color: #555;
         }
         
-        .form-control {
+        input, textarea {
             width: 100%;
             padding: 14px;
-            border: 2px solid #e1e5ee;
-            border-radius: 10px;
-            font-size: 16px;
-            transition: all 0.3s ease;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border 0.3s ease;
         }
         
-        .form-control:focus {
-            border-color: #2575fc;
+        input:focus, textarea:focus {
+            border-color: #4776E6;
             outline: none;
-            box-shadow: 0 0 0 4px rgba(37, 117, 252, 0.1);
+            box-shadow: 0 0 0 3px rgba(71, 118, 230, 0.1);
         }
         
-        textarea.form-control {
-            min-height: 150px;
+        textarea {
+            height: 150px;
             resize: vertical;
         }
         
-        .submit-btn {
-            background: linear-gradient(to right, #2575fc, #6a11cb);
+        button {
+            background: linear-gradient(to right, #4776E6, #8E54E9);
             color: white;
             border: none;
-            padding: 16px 40px;
-            font-size: 18px;
-            font-weight: 600;
-            border-radius: 50px;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            border-radius: 8px;
             cursor: pointer;
-            transition: all 0.3s ease;
-            display: block;
             width: 100%;
+            font-weight: 600;
             letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(142, 84, 233, 0.4);
         }
         
-        .submit-btn:hover {
-            background: linear-gradient(to right, #1a68e8, #5a0bc0);
+        button:hover {
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 8px 20px rgba(142, 84, 233, 0.6);
         }
         
-        .submit-btn:active {
+        button:active {
             transform: translateY(0);
         }
         
         .status-message {
             padding: 15px;
-            margin-top: 20px;
-            border-radius: 10px;
+            margin: 20px 0;
+            border-radius: 8px;
             text-align: center;
-            font-weight: 500;
             display: none;
         }
         
@@ -217,6 +197,11 @@
             display: block;
         }
         
+        .required:after {
+            content: " *";
+            color: #e74c3c;
+        }
+        
         @media (max-width: 768px) {
             .container {
                 flex-direction: column;
@@ -226,211 +211,118 @@
                 padding: 30px;
             }
         }
-        
-        .setup-guide {
-            background: white;
-            border-radius: 15px;
-            padding: 25px;
-            margin-top: 40px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-        
-        .setup-guide h3 {
-            color: #2575fc;
-            margin-bottom: 15px;
-            text-align: center;
-            font-size: 24px;
-        }
-        
-        .setup-steps {
-            counter-reset: step;
-        }
-        
-        .step {
-            margin-bottom: 20px;
-            padding-left: 50px;
-            position: relative;
-        }
-        
-        .step::before {
-            counter-increment: step;
-            content: counter(step);
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 35px;
-            height: 35px;
-            background: #6a11cb;
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-weight: bold;
-        }
-        
-        .instructions {
-            background: #f8f9fa;
-            border-left: 4px solid #2575fc;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 0 10px 10px 0;
-        }
-        
-        .instructions h3 {
-            color: #2575fc;
-            margin-bottom: 10px;
-        }
-        
-        .instructions p {
-            margin-bottom: 10px;
-            line-height: 1.5;
-        }
-        
-        .instructions code {
-            background: #e9ecef;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-family: monospace;
-        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="contact-info">
-            <h2>Get In Touch</h2>
-            <p>Have questions or feedback? We'd love to hear from you! Fill out the form and our team will get back to you as soon as possible.</p>
-   
+            <h1>Get In Touch</h1>
+            <p>Have questions or want to work together? Fill out the form and we'll get back to you as soon as possible.</p>
+            
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <h3>Location</h3>
+                    <p>San Francisco, CA</p>
+                </div>
+            </div>
+            
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <h3>Email</h3>
+                    <p>contact@yourwebsite.com</p>
+                </div>
+            </div>
+            
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                    <h3>Phone</h3>
+                    <p>+1 (123) 456-7890</p>
+                </div>
+            </div>
+            
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
         </div>
         
         <div class="contact-form">
-            <h2>Send Us a Message</h2>
-            <div class="status-message" id="statusMessage"></div>
+            <h1>Contact Us</h1>
+            <div id="status-message" class="status-message"></div>
             
-            <form id="contactForm">
+            <form id="contactForm" action="https://formspree.io/f/mpwlklrq" method="POST">
                 <div class="form-group">
-                    <label for="name">Your Name</label>
-                    <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                    <label for="name" class="required">Full Name</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
                 
                 <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                    <label for="email" class="required">Email Address</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
                 
                 <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" class="form-control" placeholder="What is this regarding?" required>
+                    <label for="subject" class="required">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
                 </div>
                 
                 <div class="form-group">
-                    <label for="message">Your Message</label>
-                    <textarea id="message" class="form-control" placeholder="Type your message here..." required></textarea>
+                    <label for="message" class="required">Your Message</label>
+                    <textarea id="message" name="message" required></textarea>
                 </div>
                 
-                <button type="submit" class="submit-btn">
-                    <i class="fas fa-paper-plane"></i> Send Message
-                </button>
+                <button type="submit">Send Message</button>
             </form>
-            
-          </div>
+        </div>
     </div>
 
     <script>
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Get form values
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value;
+            // Get form data
+            const form = e.target;
+            const formData = new FormData(form);
             
             // Show loading state
-            const submitBtn = document.querySelector('.submit-btn');
-            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-            submitBtn.disabled = true;
+            const statusMessage = document.getElementById('status-message');
+            statusMessage.textContent = 'Sending your message...';
+            statusMessage.className = 'status-message';
+            statusMessage.style.display = 'block';
             
-            // Prepare form data
-            const formData = {
-                name: name,
-                email: email,
-                subject: subject,
-                message: message
-            };
-            
-            // Replace with your Google Apps Script URL
-            const scriptURL = https://script.google.com/macros/s/AKfycbywkYUqmXDmrqEalZJhsZahGDI8KlJdTw-pC2KO7HJk6WVoE4MYk2rRdc4ruTmhXdAA/exec;
-            
-            // Send data to Google Apps Script
-            fetch(scriptURL, {
+            // Send form data to Formspree
+            fetch(form.action, {
                 method: 'POST',
-                body: JSON.stringify(formData),
+                body: formData,
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Accept': 'application/json'
                 }
             })
             .then(response => {
                 if (response.ok) {
-                    return response.text();
+                    // Success message
+                    statusMessage.textContent = 'Message sent successfully! We will get back to you soon.';
+                    statusMessage.className = 'status-message success';
+                    
+                    // Reset form
+                    form.reset();
+                } else {
+                    // Error message
+                    statusMessage.textContent = 'Oops! There was a problem sending your message. Please try again.';
+                    statusMessage.className = 'status-message error';
                 }
-                throw new Error('Network response was not ok.');
-            })
-            .then(data => {
-                showStatus('Thank you! Your message has been sent successfully.', 'success');
-                document.getElementById('contactForm').reset();
             })
             .catch(error => {
-                showStatus('There was an error sending your message. Please try again.', 'error');
-            })
-            .finally(() => {
-                submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
-                submitBtn.disabled = false;
+                // Network error
+                statusMessage.textContent = 'Network error. Please check your connection and try again.';
+                statusMessage.className = 'status-message error';
             });
         });
-        
-        function showStatus(message, type) {
-            const statusElement = document.getElementById('statusMessage');
-            statusElement.textContent = message;
-            statusElement.className = 'status-message ' + type;
-            
-            // Hide message after 5 seconds
-            setTimeout(() => {
-                statusElement.style.display = 'none';
-            }, 5000);
-        }
     </script>
-    <script>
-// Add this at the end of the existing script section
-
-// Prevent copying
-document.addEventListener('copy', function(e) {
-    e.preventDefault();
-    alert('Copying content is disabled on this website.');
-});
-
-// Prevent right-click context menu
-document.addEventListener('contextmenu', function(e) {
-    e.preventDefault();
-    alert('Right-click is disabled on this website.');
-});
-
-// Disable text selection
-document.addEventListener('mousedown', function(e) {
-    if (e.detail > 1) { // Prevent double-click text selection
-        e.preventDefault();
-    }
-});
-</script>
-
-<style>
-/* Add this at the end of the existing CSS */
-body {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-</style>
 </body>
 </html>
