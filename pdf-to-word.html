@@ -206,6 +206,99 @@ document.addEventListener('mousedown', function(e) {
         e.preventDefault();
     }
 });
+            <script>
+        // Counter for blocked attempts
+        let blockedAttempts = 0;
+        const counterElement = document.getElementById('counter');
+        
+        // Function to update counter display
+        function updateCounter() {
+            counterElement.textContent = blockedAttempts;
+        }
+        
+        // Disable context menu (right-click)
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+            blockedAttempts++;
+            updateCounter();
+            alert('Context menu is disabled on this page.');
+            return false;
+        });
+        
+        // Disable keyboard shortcuts
+        document.addEventListener('keydown', function(e) {
+            // F12 key
+            if (e.key === 'F12') {
+                e.preventDefault();
+                blockedAttempts++;
+                updateCounter();
+                alert('F12 developer tools shortcut is disabled.');
+                return false;
+            }
+            
+            // Ctrl+Shift+I (Cmd+Shift+I on Mac)
+            if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'I') {
+                e.preventDefault();
+                blockedAttempts++;
+                updateCounter();
+                alert('Ctrl+Shift+I developer tools shortcut is disabled.');
+                return false;
+            }
+            
+            // Ctrl+Shift+J (Cmd+Shift+J on Mac)
+            if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'J') {
+                e.preventDefault();
+                blockedAttempts++;
+                updateCounter();
+                alert('Ctrl+Shift+J console shortcut is disabled.');
+                return false;
+            }
+            
+            // Ctrl+Shift+C (Cmd+Shift+C on Mac)
+            if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'C') {
+                e.preventDefault();
+                blockedAttempts++;
+                updateCounter();
+                alert('Ctrl+Shift+C inspect element shortcut is disabled.');
+                return false;
+            }
+            
+            // Ctrl+U (View source)
+            if ((e.ctrlKey || e.metaKey) && e.key === 'u') {
+                e.preventDefault();
+                blockedAttempts++;
+                updateCounter();
+                alert('Ctrl+U view source shortcut is disabled.');
+                return false;
+            }
+        });
+        
+        // Additional protection: Prevent opening developer tools by any means
+        // This is not foolproof but adds another layer
+        setInterval(function() {
+            checkDevTools();
+        }, 1000);
+        
+        function checkDevTools() {
+            const before = new Date().getTime();
+            debugger;
+            const after = new Date().getTime();
+            
+            // If dev tools are open, the debugger will pause execution
+            // causing a longer delay between before and after
+            if (after - before > 100) {
+                // Dev tools might be open
+                blockedAttempts++;
+                updateCounter();
+                
+                // Attempt to close the page or redirect
+                // window.location.href = 'about:blank';
+            }
+        };
+        
+        // Initial counter update
+        updateCounter();
+    </script>
     
 </body>
 </html>
