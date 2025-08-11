@@ -206,6 +206,56 @@ document.addEventListener('mousedown', function(e) {
         e.preventDefault();
     }
 });
+<script>
+        // Disable keyboard shortcuts
+        document.addEventListener('keydown', function(event) {
+            // Disable F12
+            if (event.key === 'F12') {
+                event.preventDefault();
+                event.returnValue = false;
+            }
 
+            // Disable Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+C
+            if (event.ctrlKey && event.shiftKey) {
+                switch (event.key) {
+                    case 'I':
+                    case 'i':
+                    case 'J':
+                    case 'j':
+                    case 'C':
+                    case 'c':
+                        event.preventDefault();
+                        event.returnValue = false;
+                        break;
+                }
+            }
+
+            // Disable Ctrl+U (View Source)
+            if (event.ctrlKey && event.key === 'U') {
+                event.preventDefault();
+                event.returnValue = false;
+            }
+
+            // Extra protection for Ctrl+U (lowercase 'u')
+            if (event.ctrlKey && event.key === 'u') {
+                event.preventDefault();
+                event.returnValue = false;
+            }
+        });
+
+        // Disable context menu (right-click)
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+            event.returnValue = false;
+        });
+
+        // Disable copy/paste
+        ['copy', 'cut', 'paste'].forEach(function(eventName) {
+            document.addEventListener(eventName, function(event) {
+                event.preventDefault();
+                event.returnValue = false;
+            });
+        });
+    </script>
 </body>
 </html>
