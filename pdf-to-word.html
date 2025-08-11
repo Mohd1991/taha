@@ -206,16 +206,64 @@ document.addEventListener('mousedown', function(e) {
         e.preventDefault();
     }
 });
-</script>
-
-<style>
-/* Add this at the end of the existing CSS */
-body {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-</style>
+<script>
+        // Disable right-click context menu
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+            alert('Right-click is disabled on this website');
+        });
+        
+        // Disable Ctrl+U and other shortcuts
+        document.addEventListener('keydown', function(e) {
+            // Disable Ctrl+U (View Source)
+            if (e.ctrlKey && e.keyCode === 85) {
+                e.preventDefault();
+                alert('View source shortcut is disabled');
+            }
+            
+            // Disable F12 (DevTools)
+            if (e.keyCode === 123) {
+                e.preventDefault();
+                alert('Developer tools access is restricted');
+            }
+            
+            // Disable Ctrl+Shift+I (DevTools)
+            if (e.ctrlKey && e.shiftKey && e.keyCode === 73) {
+                e.preventDefault();
+                alert('Developer tools access is restricted');
+            }
+        });
+        
+        // Make it harder to access DevTools by detecting when they open
+        setInterval(function() {
+            if (window.outerHeight - window.innerHeight > 100 || 
+                window.outerWidth - window.innerWidth > 100) {
+                alert('Developer tools detected!');
+                window.location.reload();
+            }
+        }, 1000);
+        
+        // Obfuscate JavaScript content (this is a simple example)
+        const sensitiveData = "This is sensitive information";
+        const obfuscatedData = sensitiveData.split('').reverse().join('');
+        
+        // Button event handlers
+        document.getElementById('testButton').addEventListener('click', function() {
+            alert('Try using Ctrl+U - it should be disabled!');
+        });
+        
+        document.getElementById('rightClickTest').addEventListener('click', function() {
+            alert('Try right-clicking anywhere on the page - it should be disabled!');
+        });
+        
+        // Generate dynamic content
+        window.onload = function() {
+            const dynamicContent = document.createElement('p');
+            dynamicContent.innerHTML = 'This content was dynamically generated at: ' + new Date().toLocaleTimeString();
+            dynamicContent.style.marginTop = '20px';
+            dynamicContent.style.color = '#4ecdc4';
+            document.querySelector('.container').appendChild(dynamicContent);
+        };
+    </script>
 </body>
 </html>
