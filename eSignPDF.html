@@ -38,6 +38,7 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
+            position: relative;
         }
         
         header {
@@ -460,9 +461,61 @@
             height: 100%;
             transform: translateX(-50%);
         }
+
+        /* Home Button Styles */
+        .home-button {
+            position: fixed;
+            top: 25px;
+            left: 25px;
+            z-index: 1000;
+            background: linear-gradient(45deg, #ffcc00, #ff9500);
+            color: #1a2a6c;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .home-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+            background: linear-gradient(45deg, #ff9500, #ffcc00);
+        }
+        
+        .home-button:active {
+            transform: translateY(1px);
+        }
+        
+        .home-button i {
+            font-size: 1.2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .home-button {
+                top: 15px;
+                left: 15px;
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+            
+            header {
+                margin-top: 20px;
+            }
+        }
     </style>
 </head>
 <body>
+    <!-- Home Button -->
+    <a href="https://thetools.in" class="home-button">
+        <i class="fas fa-home"></i> Tools Home
+    </a>
+    
     <div class="success-banner" id="success-banner">
         <i class="fas fa-check-circle"></i> Document signed successfully! Ready for download.
     </div>
