@@ -88,9 +88,49 @@
         .hidden {
             display: none;
         }
+
+              .home-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: linear-gradient(to right, #ffcc00, #ff9500);
+            color: #1a2a6c;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            z-index: 100;
+        }
+        
+        .home-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            color: #1a2a6c;
+        }
+        
+        @media (max-width: 768px) {
+            .home-button {
+                top: 10px;
+                right: 10px;
+                padding: 10px 15px;
+                font-size: 0.9rem;
+            }
+            
+            header {
+                padding-top: 50px !important;
+            }
+        
     </style>
 </head>
 <body>
+  <a href="https://thetools.in" class="home-button">
+        <i class="fas fa-home"></i> Tools Home
+    </a>
     <div class="container">
         <div class="drop-zone" ondragover="handleDragOver(event)" ondrop="handleDrop(event)" ondragleave="handleDragLeave(event)">
             Drag & Drop Image Here<br>or<br>
