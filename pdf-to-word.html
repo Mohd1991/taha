@@ -43,7 +43,25 @@
             cursor: pointer;
             transition: all 0.3s ease;
         }
+		   .home-btn {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 20px;
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
 
+        .home-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            color: var(--accent);
+            transform: translateY(-2px);
+        }
         .drop-zone:hover {
             background-color: #f0f8ff;
             border-color: #0056b3;
@@ -93,6 +111,15 @@
             <button onclick="setConversionType('pdfToWord')">PDF to Word</button>
             <button onclick="setConversionType('wordToPdf')">Word to PDF</button>
         </div>
+            <a href="https://thetools.in/" class="home-btn">
+                <i class="fas fa-home"></i> Home
+            </a>
+        </header>
+            
+            <a href="https://thetools.in/" class="home-btn">
+                <i class="fas fa-home"></i> Home
+            </a>
+        </header>
 
         <div class="drop-zone" id="dropZone"
             ondragover="handleDragOver(event)"
