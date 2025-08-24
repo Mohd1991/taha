@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-   
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4K058HPDMN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-4K058HPDMN');
-</script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4K058HPDMN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4K058HPDMN');
+    </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,12 +34,14 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
+            position: relative;
         }
         
         header {
             text-align: center;
             padding: 30px 20px;
             color: white;
+            position: relative;
         }
         
         header h1 {
@@ -57,6 +56,36 @@
             margin: 0 auto;
             opacity: 0.9;
             line-height: 1.6;
+        }
+        
+        .home-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 50px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: all 0.3s;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(255, 126, 95, 0.4);
+            text-decoration: none;
+        }
+        
+        .home-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 126, 95, 0.6);
+        }
+        
+        .home-btn i {
+            font-size: 18px;
         }
         
         .card {
@@ -281,12 +310,25 @@
             header h1 {
                 font-size: 2.2rem;
             }
+            
+            .home-btn {
+                position: relative;
+                top: 0;
+                right: 0;
+                margin: 0 auto 20px;
+                display: flex;
+                justify-content: center;
+                width: 180px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
+            <a href="https://thetools.in" class="home-btn">
+                <i class="fas fa-home"></i> Home
+            </a>
             <h1><i class="fas fa-file-excel"></i> PDF to Excel Converter</h1>
             <p>Convert your PDF files to Excel spreadsheets directly in your browser - no server required! 100% free and secure.</p>
         </header>
