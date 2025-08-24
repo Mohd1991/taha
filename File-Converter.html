@@ -92,7 +92,25 @@
             list-style: none;
             gap: 20px;
         }
+       .home-btn {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 20px;
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
 
+        .home-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            color: var(--accent);
+            transform: translateY(-2px);
+        }
         nav ul li a {
             color: var(--light);
             text-decoration: none;
@@ -475,10 +493,18 @@
 <body>
     <div class="container">
         <header>
-            <div class="logo">
+          <div class="logo">
                 <i class="fas fa-file-contract"></i>
                 File<span>Magic</span>
-            </div>
+           </div>
+                  <a href="https://thetools.in/" class="home-btn">
+                 <i class="fas fa-home"></i> Home
+                 </a>
+        </header>
+            
+            <a href="https://thetools.in/" class="home-btn">
+                <i class="fas fa-home"></i> Home
+            </a>
             
         </header>
 
