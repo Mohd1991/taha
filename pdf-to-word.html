@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-<!-- Google tag (gtag.js) -->
+	<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4K058HPDMN"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -11,7 +11,7 @@
 
   gtag('config', 'G-4K058HPDMN');
 </script>
-
+	
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>File Converter - PDF to Word & Word to PDF</title>
@@ -34,7 +34,7 @@
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         }
-		}
+
         .drop-zone {
             border: 2px dashed #007bff;
             padding: 50px;
@@ -43,25 +43,7 @@
             cursor: pointer;
             transition: all 0.3s ease;
         }
-		   .home-btn {
-            color: var(--light);
-            text-decoration: none;
-            font-weight: 500;
-            padding: 8px 20px;
-            border-radius: 30px;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            transition: all 0.3s;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
 
-        .home-btn:hover {
-            background: rgba(255, 255, 255, 0.2);
-            color: var(--accent);
-            transform: translateY(-2px);
-        }
         .drop-zone:hover {
             background-color: #f0f8ff;
             border-color: #0056b3;
@@ -86,43 +68,6 @@
 
         button:hover {
             background-color: #0056b3;
-
-		.home-button {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: linear-gradient(to right, #ffcc00, #ff9500);
-            color: #1a2a6c;
-            text-decoration: none;
-            padding: 12px 25px;
-            border-radius: 50px;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            transition: all 0.3s ease;
-            z-index: 100;
-        }
-        
-        .home-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-            color: #1a2a6c;
-        }
-        
-        @media (max-width: 768px) {
-            .home-button {
-                top: 10px;
-                right: 10px;
-                padding: 10px 15px;
-                font-size: 0.9rem;
-            }
-            
-            header {
-                padding-top: 50px !important;
-            }
-			
         }
 
         .cloud-storage {
@@ -148,10 +93,7 @@
             <button onclick="setConversionType('pdfToWord')">PDF to Word</button>
             <button onclick="setConversionType('wordToPdf')">Word to PDF</button>
         </div>
-            <a href="https://thetools.in/" class="home-btn">
-                <i class="fas fa-home"></i> Home
-            </a>
-        </header>
+
         <div class="drop-zone" id="dropZone"
             ondragover="handleDragOver(event)"
             ondragleave="handleDragLeave(event)"
@@ -246,39 +188,44 @@
             }
         }
     </script>
-<script>
-        // Block right-click context menu
-        document.addEventListener('contextmenu', (e) => e.preventDefault());
 
-        // Block keyboard shortcuts
-        document.addEventListener('keydown', (e) => {
-            // Disable F12
-            if (e.key === 'F12') {
-                e.preventDefault();
-                alert("F12 is disabled!");
-            }
-            // Disable Shift + C
-            else if (e.shiftKey && e.key === 'C') {
-                e.preventDefault();
-                alert("Shift+C is disabled!");
-            }
-            // Disable Ctrl + U
-            else if (e.ctrlKey && e.key === 'u') {
-                e.preventDefault();
-                alert("Ctrl+U is disabled!");
-            }
-            // Disable Ctrl + C / Ctrl + V
-            else if (e.ctrlKey && (e.key === 'c' || e.key === 'v' || e.key === 'C' || e.key === 'V')) {
-                e.preventDefault();
-                alert("Copy/Paste is disabled!");
-            }
-        });
+    <!-- Add Cloud Storage SDKs -->
+    <!-- Google Drive Picker API -->
+    <script src="https://apis.google.com/js/api.js"></script>
+    
+    <!-- OneDrive SDK -->
+    <script src="https://js.live.net/v7.2/OneDrive.js"></script>
+    <script>
+// Add this at the end of the existing script section
 
-        // Extra: Disable copy/paste via right-click or edit menu
-        document.addEventListener('copy', (e) => e.preventDefault());
-        document.addEventListener('paste', (e) => e.preventDefault());
-        document.addEventListener('cut', (e) => e.preventDefault());
-    </script>
-   
+// Prevent copying
+document.addEventListener('copy', function(e) {
+    e.preventDefault();
+    alert('Copying content is disabled on this website.');
+});
+
+// Prevent right-click context menu
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+    alert('Right-click is disabled on this website.');
+});
+
+// Disable text selection
+document.addEventListener('mousedown', function(e) {
+    if (e.detail > 1) { // Prevent double-click text selection
+        e.preventDefault();
+    }
+});
+</script>
+
+<style>
+/* Add this at the end of the existing CSS */
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+</style>
 </body>
 </html>
