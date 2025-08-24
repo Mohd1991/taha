@@ -45,6 +45,7 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
+            position: relative;
         }
         
         header {
@@ -136,6 +137,30 @@
             cursor: not-allowed;
             transform: none;
             box-shadow: none;
+        }
+        
+        .home-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, #FF512F 0%, #F09819 100%);
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: 600;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            z-index: 10;
+        }
+        
+        .home-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+            background: linear-gradient(135deg, #F09819 0%, #FF512F 100%);
         }
         
         .file-input {
@@ -318,6 +343,14 @@
             h1 {
                 font-size: 2.2rem;
             }
+            
+            .home-btn {
+                position: relative;
+                top: unset;
+                right: unset;
+                display: inline-block;
+                margin-top: 20px;
+            }
         }
         
         @media (max-width: 480px) {
@@ -378,6 +411,11 @@
 </head>
 <body>
     <div class="container">
+        <!-- Home Button -->
+        <a href="https://thetools.in" class="home-btn">
+            <i class="fas fa-home"></i> Home
+        </a>
+        
         <header>
             <h1><i class="fas fa-file-pdf"></i> PDF Organizer</h1>
             <p class="subtitle">Upload, rearrange, and manage PDF pages with our intuitive drag-and-drop interface</p>
