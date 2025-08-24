@@ -61,6 +61,40 @@
             max-width: 1400px;
             margin: 0 auto;
             padding: 20px;
+            position: relative;
+        }
+        
+        .home-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 100;
+        }
+        
+        .home-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background: linear-gradient(45deg, #ff7e5f, #feb47b);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .home-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(45deg, #feb47b, #ff7e5f);
+        }
+        
+        .home-btn i {
+            font-size: 1.2rem;
         }
         
         header {
@@ -355,49 +389,27 @@
             .btn {
                 width: 100%;
                 justify-content: center;
-                     .home-button {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: linear-gradient(to right, #ffcc00, #ff9500);
-            color: #1a2a6c;
-            text-decoration: none;
-            padding: 12px 25px;
-            border-radius: 50px;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            transition: all 0.3s ease;
-            z-index: 100;
-        }
-        
-        .home-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-            color: #1a2a6c;
-        }
-        
-        @media (max-width: 768px) {
-            .home-button {
-                top: 10px;
-                right: 10px;
-                padding: 10px 15px;
-                font-size: 0.9rem;
             }
             
-            header {
-                padding-top: 50px !important;   
+            .home-button {
+                position: relative;
+                top: 0;
+                right: 0;
+                text-align: center;
+                margin-bottom: 20px;
             }
         }
     </style>
 </head>
 <body>
-    <a href="https://thetools.in" class="home-button">
-        <i class="fas fa-home"></i> Tools Home
-    </a>
     <div class="container">
+        <!-- Home Button -->
+        <div class="home-button">
+            <a href="https://thetools.in" class="home-btn">
+                <i class="fas fa-home"></i> Home
+            </a>
+        </div>
+        
         <header>
             <h1><i class="fas fa-file-pdf"></i> Secure PDF Comparison Tool</h1>
             <p class="tagline">Compare PDF documents side-by-side directly in your browser - no server uploads, complete privacy</p>
