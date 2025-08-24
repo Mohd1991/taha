@@ -112,6 +112,27 @@
             color: white;
         }
 
+        .home-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+
+        .home-btn:hover {
+            background: white;
+            color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
         .main-content {
             padding: 30px;
         }
@@ -389,6 +410,11 @@
                 gap: 15px;
             }
             
+            .controls {
+                width: 100%;
+                justify-content: center;
+            }
+            
             .action-buttons {
                 flex-direction: column;
             }
@@ -411,6 +437,10 @@
                 <h1 id="title">Excel to PDF Converter</h1>
             </div>
             <div class="controls">
+                <a href="https://thetools.in" class="home-btn" target="_blank">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
                 <select class="lang-select" id="lang-select">
                     <option value="en">English</option>
                     <option value="es">Español</option>
