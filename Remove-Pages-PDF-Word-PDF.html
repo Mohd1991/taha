@@ -49,6 +49,33 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
+            position: relative;
+        }
+        
+        /* Home Button Styles */
+        .home-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to right, #1a2a6c, #b21f1f);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 100;
+            gap: 8px;
+        }
+        
+        .home-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(to right, #b21f1f, #1a2a6c);
         }
         
         header {
@@ -56,6 +83,7 @@
             padding: 30px 0;
             color: white;
             text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            position: relative;
         }
         
         header h1 {
@@ -254,6 +282,17 @@
             header h1 {
                 font-size: 2.2rem;
             }
+            
+            .home-btn {
+                top: 10px;
+                right: 10px;
+                padding: 8px 15px;
+                font-size: 0.9rem;
+            }
+            
+            header {
+                padding-top: 50px;
+            }
         }
         
         .file-info {
@@ -393,6 +432,11 @@
 </head>
 <body>
     <div class="container">
+        <!-- Home Button -->
+        <a href="https://thetools.in" class="home-btn">
+            <i class="fas fa-home"></i> Home
+        </a>
+        
         <header>
             <h1>PDF Magic Tool</h1>
             <p>Edit, convert, and preview PDF files with our free online tools - no installation required!</p>
