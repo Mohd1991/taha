@@ -55,8 +55,25 @@
             cursor: pointer;
             font-size: 16px;
         }
-        button:hover {
-            background: #45a049;
+		.home-btn {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 20px;
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .home-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            color: var(--accent);
+            transform: translateY(-2px);
+        }
         }
         .preview {
             display: flex;
@@ -90,11 +107,20 @@
 <body>
     <div class="container">
         <h1>Advanced Image Converter</h1>
-        
-        <div class="upload-box">
+            <div class="upload-box">
             <h2>Upload Your Image</h2>
             <input type="file" id="imageInput" accept="image/*">
         </div>
+                    <a href="https://thetools.in/" class="home-btn">
+                <i class="fas fa-home"></i> Home
+            </a>
+        </header>
+            
+            <a href="https://thetools.in/" class="home-btn">
+                <i class="fas fa-home"></i> Home
+            </a>
+        </header>
+
         
         <div class="options">
             <h3>Convert To:</h3>
