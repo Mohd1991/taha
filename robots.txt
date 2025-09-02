@@ -1,1 +1,2 @@
-Sitemap: https://Thetools.in/sitemap.xml
+User-agent:*
+Sitemap: http://www.Thetools.in/sitemap.xml
