@@ -1,2 +1,4 @@
-User-agent:*
-Sitemap: http://www.Thetools.in/sitemap.xml
+User-agent: *
+Allow: /
+
+Sitemap: https://www.Thetools.in/sitemap.xml
