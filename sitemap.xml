@@ -1,204 +1,224 @@
-<?xml version="1.0" encoding="UTF-8"?>
-		<!--	created with www.mysitemapgenerator.com	-->
-		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version="1.0" encoding="UTF-8"?> 
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
 <url>
-	<loc>http://thetools.in/</loc>
-	<lastmod>2025-08-15T13:27:06+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>http://thetools.in/index.html</loc>
+  <priority>0.5</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2025-09-02</lastmod>
 </url>
 <url>
-	<loc>http://thetools.in/pdf-to-word.html</loc>
-	<lastmod>2025-08-15T13:27:06+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>http://thetools.in/pdf-to-word.html</loc>
+  <priority>0.5</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2025-09-02</lastmod>
 </url>
 <url>
-	<loc>http://thetools.in/PDF-to-Excel-Converter.html</loc>
-	<lastmod>2025-08-15T13:27:06+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>http://thetools.in/PDF-to-Excel-Converter.html</loc>
+  <priority>0.5</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2025-09-02</lastmod>
 </url>
 <url>
-	<loc>http://thetools.in/excel-pdf.html</loc>
-	<lastmod>2025-08-15T13:27:06+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>http://thetools.in/excel-pdf.html</loc>
+  <priority>0.5</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2025-09-02</lastmod>
 </url>
 <url>
-	<loc>http://thetools.in/Add-Multiple-JPG-to-PDF.html</loc>
-	<lastmod>2025-08-15T13:27:06+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>http://thetools.in/Add-Multiple-JPG-to-PDF.html</loc>
+  <priority>0.5</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2025-09-02</lastmod>
 </url>
 <url>
-	<loc>http://thetools.in/PDF%20to%20Image%20Converter.html</loc>
-	<lastmod>2025-08-15T13:27:06+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>http://thetools.in/PDF to Image Converter.html</loc>
+  <priority>0.5</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2025-09-02</lastmod>
 </url>
 <url>
-	<loc>http://thetools.in/compare-pdf.html</loc>
-	<lastmod>2025-08-15T13:27:06+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>http://thetools.in/compare-pdf.html</loc>
+  <priority>0.5</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2025-09-02</lastmod>
 </url>
 <url>
-	<loc>http://thetools.in/PDF%20Organizer.html</loc>
-	<lastmod>2025-08-15T13:27:06+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>http://thetools.in/PDF Organizer.html</loc>
+  <priority>0.5</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2025-09-02</lastmod>
 </url>
 <url>
-	<loc>http://thetools.in/Remove-Pages-PDF-Word-PDF.html</loc>
-	<lastmod>2025-08-15T13:27:06+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>http://thetools.in/Pdf-Merger.html</loc>
+  <priority>0.5</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2025-09-02</lastmod>
 </url>
 <url>
-	<loc>http://thetools.in/PDF-compressor.html</loc>
-	<lastmod>2025-08-15T13:27:06+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>http://thetools.in/Remove-Pages-PDF-Word-PDF.html</loc>
+  <priority>0.5</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2025-09-02</lastmod>
 </url>
 <url>
-	<loc>http://thetools.in/Camera-Pdf-Scanner.html</loc>
-	<lastmod>2025-08-15T13:27:06+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>http://thetools.in/PDF-compressor.html</loc>
+  <priority>0.5</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2025-09-02</lastmod>
 </url>
 <url>
-	<loc>http://thetools.in/Text-to-PDF.html</loc>
-	<lastmod>2025-08-15T13:27:06+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>http://thetools.in/Text-to-PDF.html</loc>
+  <priority>0.5</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2025-09-02</lastmod>
 </url>
 <url>
-	<loc>http://thetools.in/File-Converter.html</loc>
-	<lastmod>2025-08-15T13:27:06+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>http://thetools.in/File-Converter.html</loc>
+  <priority>0.5</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2025-09-02</lastmod>
 </url>
 <url>
-	<loc>http://thetools.in/eSignPDF.html</loc>
-	<lastmod>2025-08-15T13:27:06+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>http://thetools.in/eSignPDF.html</loc>
+  <priority>0.5</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2025-09-02</lastmod>
 </url>
 <url>
-	<loc>http://thetools.in/Add-Water-Mark-to-PDF.html</loc>
-	<lastmod>2025-08-15T13:27:06+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>http://thetools.in/Add-Water-Mark-to-PDF.html</loc>
+  <priority>0.5</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2025-09-02</lastmod>
 </url>
 <url>
-	<loc>http://thetools.in/JPG%20to%20PDF%20Converter.html</loc>
-	<lastmod>2025-08-15T13:27:06+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>http://thetools.in/JPG to PDF Converter.html</loc>
+  <priority>0.5</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2025-09-02</lastmod>
 </url>
 <url>
-	<loc>http://thetools.in/Word%20to%20PDF.html</loc>
-	<lastmod>2025-08-15T13:27:06+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>http://thetools.in/Word to PDF.html</loc>
+  <priority>0.5</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2025-09-02</lastmod>
 </url>
 <url>
-	<loc>http://thetools.in/Word%20to%20JPG.html</loc>
-	<lastmod>2025-08-15T13:27:06+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>http://thetools.in/Word to JPG.html</loc>
+  <priority>0.5</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2025-09-02</lastmod>
 </url>
 <url>
-	<loc>http://thetools.in/Image-Compressor.html</loc>
-	<lastmod>2025-08-15T13:27:06+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>http://thetools.in/Image-Compressor.html</loc>
+  <priority>0.5</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2025-09-02</lastmod>
 </url>
 <url>
-	<loc>http://thetools.in/Smart%20Image%20Compressor.html</loc>
-	<lastmod>2025-08-15T13:27:06+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>http://thetools.in/Smart Image Compressor.html</loc>
+  <priority>0.5</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2025-09-02</lastmod>
 </url>
 <url>
-	<loc>http://thetools.in/image-rotator.html</loc>
-	<lastmod>2025-08-15T13:27:06+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>http://thetools.in/image-rotator.html</loc>
+  <priority>0.5</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2025-09-02</lastmod>
 </url>
 <url>
-	<loc>http://thetools.in/Image-Resizer.html</loc>
-	<lastmod>2025-08-15T13:27:06+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>http://thetools.in/Image-Resizer.html</loc>
+  <priority>0.5</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2025-09-02</lastmod>
 </url>
 <url>
-	<loc>http://thetools.in/backgroundremover.html</loc>
-	<lastmod>2025-08-15T13:27:06+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>http://thetools.in/backgroundremover.html</loc>
+  <priority>0.5</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2025-09-02</lastmod>
 </url>
 <url>
-	<loc>http://thetools.in/Image%20Enhancer%20-%20Enhance%20Your%20Photos%20Instantly.html</loc>
-	<lastmod>2025-08-15T13:27:06+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>http://thetools.in/Image Enhancer - Enhance Your Photos Instantly.html</loc>
+  <priority>0.5</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2025-09-02</lastmod>
 </url>
 <url>
-	<loc>http://thetools.in/Image%20to%20PNG.html</loc>
-	<lastmod>2025-08-15T13:27:06+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>http://thetools.in/Image to PNG.html</loc>
+  <priority>0.5</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2025-09-02</lastmod>
 </url>
 <url>
-	<loc>http://thetools.in/Image-to-Base64.html</loc>
-	<lastmod>2025-08-15T13:27:06+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>http://thetools.in/Image-to-Base64.html</loc>
+  <priority>0.5</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2025-09-02</lastmod>
 </url>
 <url>
-	<loc>http://thetools.in/ImagetoText.html</loc>
-	<lastmod>2025-08-15T13:27:06+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>http://thetools.in/ImagetoText.html</loc>
+  <priority>0.5</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2025-09-02</lastmod>
 </url>
 <url>
-	<loc>http://thetools.in/Image-Converter.html</loc>
-	<lastmod>2025-08-15T13:27:06+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>http://thetools.in/Image-Converter.html</loc>
+  <priority>0.5</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2025-09-02</lastmod>
 </url>
 <url>
-	<loc>http://thetools.in/Contact-Us.html</loc>
-	<lastmod>2025-08-15T13:27:06+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>http://thetools.in/about.html</loc>
+  <priority>0.5</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2025-09-02</lastmod>
 </url>
 <url>
-	<loc>http://thetools.in/Privacy-Policy.html</loc>
-	<lastmod>2025-08-15T13:27:06+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>http://thetools.in/Contact-Us.html</loc>
+  <priority>0.5</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2025-09-02</lastmod>
 </url>
 <url>
-	<loc>http://thetools.in/Terms-of-Services.html</loc>
-	<lastmod>2025-08-15T13:27:06+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>http://thetools.in/Privacy-Policy.html</loc>
+  <priority>0.5</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2025-09-02</lastmod>
 </url>
 <url>
-	<loc>http://thetools.in/Cookies-Policy.html</loc>
-	<lastmod>2025-08-15T13:27:06+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>http://thetools.in/Terms-of-Services.html</loc>
+  <priority>0.5</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2025-09-02</lastmod>
 </url>
 <url>
-	<loc>http://thetools.in/PDF%20to%20Image%20Converter.html</loc>
-	<lastmod>2025-08-15T13:27:08+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>http://thetools.in/Cookies-Policy.html</loc>
+  <priority>0.5</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2025-09-02</lastmod>
 </url>
 <url>
-	<loc>http://thetools.in/PDF%20Organizer.html</loc>
-	<lastmod>2025-08-15T13:27:09+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc></loc>
+  <priority>0.5</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2025-09-02</lastmod>
 </url>
 <url>
-	<loc>http://thetools.in/JPG%20to%20PDF%20Converter.html</loc>
-	<lastmod>2025-08-15T13:27:10+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>http://thetools.in/</loc>
+  <priority>0.5</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2025-09-02</lastmod>
 </url>
 <url>
-	<loc>http://thetools.in/Word%20to%20PDF.html</loc>
-	<lastmod>2025-08-15T13:27:10+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>https://thetools.in</loc>
+  <priority>0.5</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2025-09-02</lastmod>
 </url>
 <url>
-	<loc>http://thetools.in/Word%20to%20JPG.html</loc>
-	<lastmod>2025-08-15T13:27:10+01:00</lastmod>
-	<priority>1.0</priority>
+  <loc>https://thetools.in/</loc>
+  <priority>0.5</priority>
+  <changefreq>always</changefreq>
+  <lastmod>2025-09-02</lastmod>
 </url>
-<url>
-	<loc>http://thetools.in/Smart%20Image%20Compressor.html</loc>
-	<lastmod>2025-08-15T13:27:10+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>http://thetools.in/Image%20Enhancer%20-%20Enhance%20Your%20Photos%20Instantly.html</loc>
-	<lastmod>2025-08-15T13:27:11+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>http://thetools.in/Image%20to%20PNG.html</loc>
-	<lastmod>2025-08-15T13:27:11+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-</urlset>
