@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
- 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4K058HPDMN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-4K058HPDMN');
-</script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4K058HPDMN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4K058HPDMN');
+    </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -83,6 +80,20 @@
             max-width: 700px;
             margin: 0 auto 20px;
             color: #f0f0f0;
+        }
+        
+        .home-link {
+            display: inline-block;
+            margin-top: 10px;
+            color: #ffd700;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .home-link:hover {
+            color: #ff9a00;
+            text-decoration: underline;
         }
         
         .card {
@@ -285,6 +296,22 @@
             margin-top: 50px;
         }
         
+        .footer-links {
+            margin-bottom: 15px;
+        }
+        
+        .footer-links a {
+            color: #ffd700;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: #ff9a00;
+            text-decoration: underline;
+        }
+        
         .image-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -351,6 +378,7 @@
                 <h1>JPG to PDF Converter</h1>
             </div>
             <p class="tagline">Convert your JPG images to professional PDF documents instantly. Free, secure, and no registration required!</p>
+            <a href="https://thetools.in" class="home-link">← Back to thetools.in Home</a>
         </header>
         
         <div class="card">
@@ -460,6 +488,9 @@
     
     <footer>
         <div class="container">
+            <div class="footer-links">
+                <a href="https://thetools.in">Home</a>
+            </div>
             <p>© 2023 JPG to PDF Converter. All rights reserved.</p>
             <p>Free online tool for converting JPG images to PDF format.</p>
         </div>
@@ -666,7 +697,7 @@
         // Make removeImage available globally for onclick
         window.removeImage = removeImage;
     </script>
-<script>
+    <script>
         // Block right-click context menu
         document.addEventListener('contextmenu', (e) => e.preventDefault());
 
@@ -699,6 +730,5 @@
         document.addEventListener('paste', (e) => e.preventDefault());
         document.addEventListener('cut', (e) => e.preventDefault());
     </script>
-
 </body>
 </html>
